@@ -75,6 +75,7 @@ Studio.destroy_all
 rails generate model Studio
 rails generate model Movie
 rails generate model Actor
+rails generate model Role
 
 # TODO!
 
