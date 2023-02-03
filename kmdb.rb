@@ -171,6 +171,11 @@ actor_11 = Actor.new
 actor_11["name"] = "Anne Hathaway"
 actor_11.save
 
+role_1 = Role.new
+role_1["character_name"] = "Bruce Wayne"
+role_1["movie_id"] = "1"
+role_1["actor_id"] = "1"
+
 # Do not use hard-coded foreign key IDs.
 # TODO!
 
