@@ -106,28 +106,70 @@ studio["name"] = "Warner Bros"
 studio.save
 
 
-movie= Movie.new
-movie["title"] = "Batman Begins"
-movie["year_released"] = "2005"
-movie["rated"] = "PG-13"
-movie["studio_id"] = "1"
-movie.save
+movie_1 = Movie.new
+movie_1["title"] = "Batman Begins"
+movie_1["year_released"] = "2005"
+movie_1["rated"] = "PG-13"
+movie_1["studio_id"] = "1"
+movie_1.save
 
-movie = Movie.new
-movie["title"] = "The Dark Knight"
-movie["year_released"] = "2008"
-movie["rated"] = "PG-13"
-movie["studio_id"] = "1"
-movie.save
+movie_2 = Movie.new
+movie_2["title"] = "The Dark Knight"
+movie_2["year_released"] = "2008"
+movie_2["rated"] = "PG-13"
+movie_2["studio_id"] = "1"
+movie_2.save
 
-movie = Movie.new
-movie["title"] = "The Dark Knight Rises"
-movie["year_released"] = "2012"
-movie["rated"] = "PG-13"
-movie["studio_id"] = "1"
-movie.save
+movie_3 = Movie.new
+movie_3["title"] = "The Dark Knight Rises"
+movie_3["year_released"] = "2012"
+movie_3["rated"] = "PG-13"
+movie_3["studio_id"] = "1"
+movie_3.save
 
+actor_1 = Actor.new
+actor_1["name"] = "Christian Bale"
+actor_1.save
 
+actor_2 = Actor.new
+actor_2["name"] = "Liam Neeson"
+actor_2.save
+
+actor_3 = Actor.new
+actor_3["name"] = "Michael Caine"
+actor_3.save
+
+actor_4 = Actor.new
+actor_4["name"] = "Katie Holmes"
+actor_4.save
+
+actor_5 = Actor.new
+actor_5["name"] = "Gary Oldman"
+actor_5.save
+
+actor_6 = Actor.new
+actor_6["name"] = "Heath Ledger"
+actor_6.save
+
+actor_7 = Actor.new
+actor_7["name"] = "Aaron Eckhart"
+actor_7.save
+
+actor_8 = Actor.new
+actor_8["name"] = "Maggie Gyllenhaal"
+actor_8.save
+
+actor_9 = Actor.new
+actor_9["name"] = "Tom Hardy"
+actor_9.save
+
+actor_10 = Actor.new
+actor_10["name"] = "Joseph Gordon Levitt"
+actor_10.save
+
+actor_11 = Actor.new
+actor_11["name"] = "Anne Hathaway"
+actor_11.save
 
 # Do not use hard-coded foreign key IDs.
 # TODO!
