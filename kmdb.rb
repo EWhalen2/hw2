@@ -93,87 +93,39 @@ Rails.logger.info "------------------------"
 
 #Create the four tables with the following commands:
 
-# rails generate model Studio
-# rails generate model Movie
-# rails generate model Actor
-# rails generate model Role
+
 
 #Insert rows into the tables by doing the following:
 
-#in the db/migrate/*_create_actors.rb folder insert the following:
-#class CreateActors < ActiveRecord::Migration[7.0]
- #   def change
- #     create_table :actors do |t|
-  #      t.string "name"
-  
-  #      t.timestamps
-  #    end
-  #  end
- # end
-
- #in the db/migrate/*_create_role.rb folder insert the following:
-
- # class CreateRoles < ActiveRecord::Migration[7.0]
- #   def change
-  #    create_table :roles do |t|
-  #      t.string "character_name"
-  #      t.integer "movie_id"
-  #      t.integer "actor_id"
-  
-  #      t.timestamps
-  #    end
-  #  end
- # end
-
-#in the db/migrate/*_create_studios.rb folder insert the following:
-
-#class CreateStudios < ActiveRecord::Migration[7.0]
- #   def change
- #     create_table :studios do |t|
- #       t.string "name"
- #       t.timestamps
- #     end
- #   end
- # end
-
- #in the db/migrate/*_create_movies.rb folder insert the following:
-
- #class CreateMovies < ActiveRecord::Migration[7.0]
- #   def change
- #     create_table :movies do |t|
- #       t.string "title"
- #       t.integer "year_released"
- #       t.string "rated"
- #       t.integer "studio_id"
-  
- #       t.timestamps
- #     end
- #   end
- # end
 
 # TODO!
 
 # Insert data into the database that reflects the sample data shown above.
-studio_new = Studio.new
+studio= Studio.new
 studio["name"] = "Warner Bros"
+studio.save
 
-movie_new = Movie.new
+
+movie= Movie.new
 movie["title"] = "Batman Begins"
 movie["year_released"] = "2005"
 movie["rated"] = "PG-13"
 movie["studio_id"] = "1"
+movie.save
 
-movie_new = Movie.new
+movie = Movie.new
 movie["title"] = "The Dark Knight"
 movie["year_released"] = "2008"
 movie["rated"] = "PG-13"
 movie["studio_id"] = "1"
+movie.save
 
-movie_new = Movie.new
+movie = Movie.new
 movie["title"] = "The Dark Knight Rises"
 movie["year_released"] = "2012"
 movie["rated"] = "PG-13"
 movie["studio_id"] = "1"
+movie.save
 
 
 
