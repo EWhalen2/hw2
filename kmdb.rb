@@ -69,13 +69,87 @@
 
 # Delete existing data, so you'll start fresh each time this script is run.
 Studio.destroy_all
+Rails.logger.info "------------------------"
+Rails.logger.info "----- FRESH START! -----"
+Rails.logger.info "------------------------"
+
+Movie.destroy_all
+Rails.logger.info "------------------------"
+Rails.logger.info "----- FRESH START! -----"
+Rails.logger.info "------------------------"
+
+Role.destroy_all
+Rails.logger.info "------------------------"
+Rails.logger.info "----- FRESH START! -----"
+Rails.logger.info "------------------------"
+
+Actor.destroy_all
+Rails.logger.info "------------------------"
+Rails.logger.info "----- FRESH START! -----"
+Rails.logger.info "------------------------"
 # TODO!
 
 # Generate models and tables, according to the domain model.
-rails generate model Studio
-rails generate model Movie
-rails generate model Actor
-rails generate model Role
+
+#Create the four tables with the following commands:
+
+# rails generate model Studio
+# rails generate model Movie
+# rails generate model Actor
+# rails generate model Role
+
+#Insert rows into the tables by doing the following:
+
+#in the db/migrate/*_create_actors.rb folder insert the following:
+#class CreateActors < ActiveRecord::Migration[7.0]
+ #   def change
+ #     create_table :actors do |t|
+  #      t.string "name"
+  
+  #      t.timestamps
+  #    end
+  #  end
+ # end
+
+ #in the db/migrate/*_create_role.rb folder insert the following:
+
+ # class CreateRoles < ActiveRecord::Migration[7.0]
+ #   def change
+  #    create_table :roles do |t|
+  #      t.string "character_name"
+  #      t.integer "movie_id"
+  #      t.integer "actor_id"
+  
+  #      t.timestamps
+  #    end
+  #  end
+ # end
+
+#in the db/migrate/*_create_studios.rb folder insert the following:
+
+#class CreateStudios < ActiveRecord::Migration[7.0]
+ #   def change
+ #     create_table :studios do |t|
+ #       t.string "name"
+ #       t.timestamps
+ #     end
+ #   end
+ # end
+
+ #in the db/migrate/*_create_movies.rb folder insert the following:
+
+ #class CreateMovies < ActiveRecord::Migration[7.0]
+ #   def change
+ #     create_table :movies do |t|
+ #       t.string "title"
+ #       t.integer "year_released"
+ #       t.string "rated"
+ #       t.integer "studio_id"
+  
+ #       t.timestamps
+ #     end
+ #   end
+ # end
 
 # TODO!
 
