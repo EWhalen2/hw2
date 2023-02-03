@@ -154,6 +154,29 @@ Rails.logger.info "------------------------"
 # TODO!
 
 # Insert data into the database that reflects the sample data shown above.
+studio_new = Studio.new
+studio["name"] = "Warner Bros"
+
+movie_new = Movie.new
+movie["title"] = "Batman Begins"
+movie["year_released"] = "2005"
+movie["rated"] = "PG-13"
+movie["studio_id"] = "1"
+
+movie_new = Movie.new
+movie["title"] = "The Dark Knight"
+movie["year_released"] = "2008"
+movie["rated"] = "PG-13"
+movie["studio_id"] = "1"
+
+movie_new = Movie.new
+movie["title"] = "The Dark Knight Rises"
+movie["year_released"] = "2012"
+movie["rated"] = "PG-13"
+movie["studio_id"] = "1"
+
+
+
 # Do not use hard-coded foreign key IDs.
 # TODO!
 
