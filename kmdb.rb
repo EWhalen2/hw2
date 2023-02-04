@@ -132,11 +132,11 @@ actor_1["name"] = "Christian Bale"
 actor_1.save
 
 actor_2 = Actor.new
-actor_2["name"] = "Liam Neeson"
+actor_2["name"] = "Michael Caine"
 actor_2.save
 
 actor_3 = Actor.new
-actor_3["name"] = "Michael Caine"
+actor_3["name"] = "Liam Neeson"
 actor_3.save
 
 actor_4 = Actor.new
@@ -175,6 +175,78 @@ role_1 = Role.new
 role_1["character_name"] = "Bruce Wayne"
 role_1["movie_id"] = "1"
 role_1["actor_id"] = "1"
+
+role_2 = Role.new
+role_2["character_name"] = "Alfred"
+role_2["movie_id"] = "1"
+role_2["actor_id"] = "2"
+
+role_3 = Role.new
+role_3["character_name"] = "Ra's Al Ghul"
+role_3["movie_id"] = "1"
+role_3["actor_id"] = "3"
+
+role_4 = Role.new
+role_4["character_name"] = "Rachel Dawes"
+role_4["movie_id"] = "1"
+role_4["actor_id"] = "4"
+
+role_5 = Role.new
+role_5["character_name"] = "Commissioner Gordon"
+role_5["movie_id"] = "1"
+role_5["actor_id"] = "5"
+
+role_6 = Role.new
+role_6["character_name"] = "Bruce Wayne"
+role_6["movie_id"] = "2"
+role_6["actor_id"] = "1"
+
+role_7 = Role.new
+role_7["character_name"] = "Joker"
+role_7["movie_id"] = "2"
+role_7["actor_id"] = "6"
+
+role_8 = Role.new
+role_8["character_name"] = "Harvey Dent"
+role_8["movie_id"] = "2"
+role_8["actor_id"] = "7"
+
+role_9 = Role.new
+role_9["character_name"] = "Alfred"
+role_9["movie_id"] = "2"
+role_9["actor_id"] = "2"
+
+role_10 = Role.new
+role_10["character_name"] = "Rachel Dawes"
+role_10["movie_id"] = "2"
+role_10["actor_id"] = "8"
+
+role_11 = Role.new
+role_11["character_name"] = "Bruce Wayne"
+role_11["movie_id"] = "3"
+role_11["actor_id"] = "1"
+
+role_12 = Role.new
+role_12["character_name"] = "Commissioner Gordon"
+role_12["movie_id"] = "3"
+role_12["actor_id"] = "5"
+
+role_11 = Role.new
+role_11["character_name"] = "Bane"
+role_11["movie_id"] = "3"
+role_11["actor_id"] = "9"
+
+role_11 = Role.new
+role_11["character_name"] = "John Blake"
+role_11["movie_id"] = "3"
+role_11["actor_id"] = "10"
+
+role_12 = Role.new
+role_12["character_name"] = "Selina Kyle"
+role_12["movie_id"] = "3"
+role_12["actor_id"] = "11"
+
+
 
 # Do not use hard-coded foreign key IDs.
 # TODO!
