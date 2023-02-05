@@ -265,6 +265,11 @@ role_15.save
 # Do not use hard-coded foreign key IDs.
 # TODO!
 
+    #actor_name = actor_id["name"]
+   # role_name = role["name"]
+
+   # puts "#{movie_title} #{actor_name} #{role_name}"
+
 # Prints a header for the movies output
 puts "Movies"
 puts "======"
@@ -289,14 +294,11 @@ puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie.
 roles = Role.all
+actors = Actor.all
 for role in roles
     movie_id = Movie.find_by({"id" => role["movie_id"]})
     actor_id = Actor.find_by({"id" => role["actor_id"]})
     movie_title = movie_id["title"]
-    actor_name = actor_id["name"]
-    role_name = role["character name"]
-
-    puts "#{movie_title} #{actor_name} #{role_name}"
 
 end
 # TODO!
