@@ -274,6 +274,7 @@ puts ""
 # TODO!
 movies = Movie.all
 for movie in movies
+    studio = Studio.find_by({"id" => movie["studio_id"]})
     puts "#{movie["title"]} #{movie["year_released"]} #{movie["rated"]}"
   end
 #use find_by method for studio name"
