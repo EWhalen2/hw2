@@ -274,14 +274,13 @@ puts ""
 # TODO!
 movies = Movie.all
 for movie in movies
-    studio = Studio.find_by({"id" => movie["studio_id"]})
-    puts "#{movie["title"]} #{movie["year_released"]} #{movie["rated"]}"
-  end
-#use find_by method for studio name"
-#Movie.all
-#puts Movie["title"]
-#puts movies["rating"]
-#puts studios["name"]
+studio = Studio.find_by({"name" => "Warner Bros"})
+title = movie["title"]
+year_released = movie["year_released"]
+rated = movie["rated"]
+#studio_name = studio["name"]
+puts "#{title} #{year_released} #{rated} #{studio}"
+end
 
 # Prints a header for the cast output
 puts ""
