@@ -279,7 +279,7 @@ title = movie["title"]
 year_released = movie["year_released"]
 rated = movie["rated"]
 #studio_name = studio["name"]
-puts "#{title} #{year_released} #{rated} #{studio}"
+puts "#{title} #{year_released} #{rated} #{studio.name}"
 end
 
 # Prints a header for the cast output
