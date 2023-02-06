@@ -91,12 +91,7 @@ Rails.logger.info "------------------------"
 
 # Generate models and tables, according to the domain model.
 
-#Create the four tables with the following commands:
-
-
-
-#Insert rows into the tables by doing the following:
-
+#See db/migrate files
 
 # TODO!
 
@@ -272,10 +267,6 @@ role_15.save
 # Do not use hard-coded foreign key IDs.
 # TODO!
 
-    #actor_name = actor_id["name"]
-   # role_name = role["name"]
-
-   # puts "#{movie_title} #{actor_name} #{role_name}"
 
 # Prints a header for the movies output
 puts "Movies"
